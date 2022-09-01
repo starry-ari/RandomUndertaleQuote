@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    
+    <title>Undertale Quotes</title>
+</head>
+
+<body>
+    <h1>Undertale Quotes</h1>
+    <h2>quote</h2>
+    <div><button>Press Me!</button> </div>
+    <script>
+        "use strict";
+        const quotes= ["\"I can't go to hell. I'm already out of vacation days.\" -Burgerpants",
+         "\"Despite everything, it's still you.\"-Chara", "\"Never interact with attractive people. Unless you're one of them they're just gonna take advantage of you.\"-BurgerPants", "\"Oh no! You’re meeting all my standards.\"-Papyrus", 
+         "\"You have something called determination. So as long as you hold on, so as long as you do what's in your heart, I believe you can do the right thing.\"-Sans"];
+    
+         window.onload = displayQuote;
+         let h2 = document.querySelector('h2');
+         let button = document.querySelector('button')
+    function displayQuote(){
+        let i = Math.random()*quotes.length;
+       h2.innerHTML= quotes[Math.floor(i)];
+    }
+    button.addEventListener('click',displayQuote);
+    </script>
+    <p>Arianna Richardson</p>
+</body> 
+
+</html>
